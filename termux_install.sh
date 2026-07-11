@@ -7,7 +7,6 @@ chmod +x configure.sh
 chmod +x autogen.sh
 ./build.sh
 cd ~
-#echo "screen -dmS miner ~/ccminer/ccminer -a verus -o stratum+tcp://na.luckpool.net:3960 -u RKbgnfWAbL43K1HrxLoWcDzRmTspYFRj6U -p x -t 6" > startup.sh
 echo "screen -dmS miner ~/ccminer/ccminer -a verus -o $1 -u $2 -p $3 -t $4" > startup.sh
 chmod +x startup.sh
 mkdir -p ~/.termux/boot
